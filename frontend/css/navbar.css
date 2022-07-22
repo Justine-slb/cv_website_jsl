@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+/*
+.nav_bar {
+    display: flex;
+    width: 100%;
+    top:0;
+    padding-bottom: 1vmax;
+    padding-top: 2vmax ;
+    background-color: rgba(50 50 50);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav_bar a {
+    background: #2F84B5;
+    font-size: 1.2vmax;
+    padding: 0 4vmax;
+    color: white;
+    font-family: 'Yu Gothic UI Light', arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav_bar a:hover{
+    font-weight: bolder;
+}
+
+#toggle, .toggle1{
+    display: none;
+}
+
+.toggle1:hover, #toggle:hover{
+    color: white;
+}
+
+.home {
+    font-family: 'Yu Gothic', arial, sans-serif;
+    font-weight: 700;
+}
+
+li span .menu {
+    float: right;
+    text-align: right;
+    font-weight: lighter;
+    padding-right: 2rem;
+}
+
+
+@media all and (max-width: 800px) {
+    #toggle:checked + .nav-link-section{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .toggle1 {
+        display: block;
+        width: 4vmax;
+        font-size: 4vmax;
+        color: white;
+        cursor: pointer;
+        margin-right: 4vmin;
+        float: right;
+    }
+
+    .menu {
+        font-size: 3vmax;
+    }
+    .menu:hover {
+        font-weight: bolder;
+    }
+}
+*/
+body {
+    margin: 0;
+    font-family: Yu Gothic UI Light, Helvetica, sans-serif;
+    font-weight: 100;
+
+}
+
+header {
+    margin: auto;
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    margin:auto;
+    z-index: 10;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #222222;
+    text-align: center;
+    padding: 0 5vmax;
+    text-decoration: none;
+    font-size: 17px;
+    border-left: solid 1px black;
+    margin:1vmax 0 1vmax 0;
+}
+
+.topnav a.active{
+    float: left;
+    border: none;
+}
+
+.topnav a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+
+.topnav a.active {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

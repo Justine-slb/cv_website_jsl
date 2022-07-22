@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>CV</title>
+    <script>
+        function changeByCross() {
+            if (document.getElementById("toggle").checked) {
+                document.getElementById("icon").innerHTML = "⤬";
+            } else {
+                document.getElementById("icon").innerHTML = "☰"
+            }
+        }
+    </script>
+</head>
+<header>
+    <div class="nav_bar">
+        <span class="checkbox">
+            <label class="toggle1" for="toggle" id="icon"> ☰ </label>
+            <input type="checkbox" id="toggle" onclick="changeByCross()">
+            <span class="nav-link-section">
+                <li><a class="home" href="/">home</a></li>
+                <li><a class="menu" href="/#contact">contact</a></li>
+                <li><a class="menu" href="/#project">portfolio</a></li>
+                <li><a class="menu" href="/cv">cv</a></li>
+            </span>
+
+        </span>
+    </div>
+</header>
+<body>
+<section>
+    <div>
+        <img src="cv_justine_img.PNG">
+    </div>
+</section>
+
+</body>
+<footer>
+    <div class="footer_contact">
+        <h5>CONTACTEZ-MOI</h5>
+        <a href="www.linkedin.com/in/Justine-Seguin-Le-boulanger"><img src=""></a>
+        <a href="mailto:justine.leboulanger@gmail.com?subject = Feedback&body = Message">
+            <img src="">
+        </a>
+    </div>
+    <div class="footer_ressources">
+        <H5>RESSOURCES</H5>
+        <li><a href="" style="text-decoration: none">CV</a></li>
+        <li><a href="" style="text-decoration: none">GITHUB</a></li>
+    </div>
+</footer>
+</html>
