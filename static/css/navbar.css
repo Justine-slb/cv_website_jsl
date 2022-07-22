@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: Yu Gothic UI Light, Helvetica, sans-serif;
+    font-weight: 100;
+
+}
+
+header {
+    margin: auto;
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    margin:auto;
+    z-index: 10;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #222222;
+    text-align: center;
+    padding: 0 5vmax;
+    text-decoration: none;
+    font-size: 17px;
+    border-left: solid 1px black;
+    margin:1vmax 0 1vmax 0;
+}
+
+.topnav a.active{
+    float: left;
+    border: none;
+    color: black;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.topnav a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

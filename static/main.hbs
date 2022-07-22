@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>welcome!</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function changeByCross() {
+            if (document.getElementById("toggle").checked) {
+                document.getElementById("icon").innerHTML = "⤬";
+            } else {
+                document.getElementById("icon").innerHTML = "☰"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Justine SEGUIN-LE BOULANGER</a>
+        <a href="/cv">CV</a>
+        <a href="#about">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+{{ header }}
+<section id="intro">
+    <div id="title">
+        <div class="img_container">
+            <div class="color-box">
+                <div id="un"></div>
+                <div id="deux"></div>
+                <div id="quatre"></div>
+                <div id="trois"></div>
+                <div id="cinq"></div>
+                <div id="six"></div>
+                <div id="sept"></div>
+            </div>
+            <img class="img_cv" id="photo_cv" src="img/img.png" alt="photo CV">
+        </div>
+        <div id="title_text">
+            <h2>DEVELOPPEUR WEB<br><span>Alternance</span></h2>
+        </div>
+    </div>
+</section>
+
+<section id="presentation">
+    <div></div>
+    <div id="box_presentation">
+        <h3>bonjour</h3>
+        <div class="text_presentation">
+            <p><strong style="font-weight: bolder">Bonjour et bienvenue sur mon site CV!</strong><br><br>Etudiante
+                passionnée en développement WEB, je suis à la recherche d’une entreprise prête à m’accueillir et
+                m’accompagner durant 16 mois dans le cadre d’un contrat de professionnalisation à compter du 3
+                Octobre.<br>Je vous laisse parcourir
+                le site et vous invite à prendre contact si vous souhaitez que l’on échange.<br>Bonne visite !
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="project">
+    <div class="portfolio_title">
+        <h4>portfolio</h4>
+        <p>Ci-dessous vous trouverez une partie des projets réalisés durant l'année.</p>
+    </div>
+    <div class="polygone_section">
+        <div class="polygone">
+            <a>crawler</a>
+        </div>
+        <div class="polygone">
+            <a>forum</a>
+        </div>
+        <div class="polygone">
+            <a>pendu</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="techno">
+    <div class="techno_container">
+        <div>
+            <h4 class="subtitle">Technologies</h4>
+            <p></p>
+        </div>
+        <div class="img_techno">
+            <div><img class="img_tech" src="img/img_1.png"><p>Node.js</p></div>
+            <div><img class="img_tech" src="img/img_2.png"><p>Angular</p></div>
+            <div><img class="img_tech" src="img/img_3.png"><p>MySql/Sqlite</p></div>
+            <div><img class="img_tech" src="img/img_4.png"><p>Javascript/Typescript</p></div>
+        </div>
+    </div>
+</section>
+</body>
+
+<footer>
+    <div class="footer_contact">
+        <h5>CONTACTEZ-MOI</h5>
+        <li><a href="www.linkedin.com/in/Justine-Seguin-Le-boulanger"><img src="img/img_5.png"></a></li>
+        <li><a href="mailto:justine.leboulanger@gmail.com?subject = Feedback&body = Message">
+            <img src="img/img_6.png">
+        </a></li>
+    </div>
+    <div class="footer_ressources">
+        <H5>RESSOURCES</H5>
+        <li><a href="" style="text-decoration: none">CV</a></li>
+        <li><a href="" style="text-decoration: none">GITHUB</a></li>
+    </div>
+</footer>
+</html>
