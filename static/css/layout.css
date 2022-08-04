@@ -31,11 +31,11 @@ body{
     margin: 4vmax auto -15vmax auto;
     width: 22vmax;
     height: 26vmax;
-    padding: 3vmax;
+    padding-top:2vmax;
 }
 
 .img_cv {
-    margin: auto;
+    margin: 0;
     width: 100%;
     height: auto;
 }
@@ -77,11 +77,11 @@ h2 span {
 h3 {
     font-family: inter, sans-serif;
     text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    writing-mode: vertical-lr;
     margin : auto;
     font-weight: 700;
-    font-size: 2.3vmax;
+    font-size: 2.6vmax;
+    letter-spacing: 0.4vmax;
 }
 
 #box_presentation {
@@ -91,7 +91,6 @@ h3 {
     text-align: justify;
     background-color: #eeeeee;
     padding: 0 2vmax;
-    border-left: solid 1px black;
 }
 
 .text_presentation {
