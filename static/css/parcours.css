@@ -3,7 +3,7 @@ p span {
 }
 
 .parcours {
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 2vmax;
     display: flex;
@@ -12,10 +12,10 @@ p span {
 .ynov{
     width: 20vmax;
     color: black;
-    background-color: white;
 }
 
 .array {
+    background-color: #eeeeee;
     border: #111111 solid 2px;
     padding: 2vmax;
     width: 50%;
@@ -28,8 +28,8 @@ p span {
     color: white;
     padding:1vmax;
     height: fit-content;
-    margin-left: -10vmax;
-    margin-top: 5vmax;
+    margin-left: -7vmax;
+    margin-top: 6vmax;
     width: 50%;
 }
 

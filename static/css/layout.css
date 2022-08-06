@@ -163,7 +163,6 @@ h7 {
     font-family: "Yu Gothic Light", Arial, sans-serif;
     font-weight: 100;
     padding: 2vmax;
-
 }
 
 /*section formation*/
@@ -220,7 +219,7 @@ h7 {
     margin: 4vmax auto;
     text-align: center;
     color: white;
-    max-width: 50%;
+    max-width: 30%;
     min-width: 10vmax;
     padding: 2vmax;
     box-shadow: 2px 4px 6px dimgrey;
