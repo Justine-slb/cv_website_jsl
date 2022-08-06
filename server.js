@@ -5,7 +5,7 @@ const path = require('path');
 // Server Creation //
 const app = express()
 app.use(express.static('static'));
-const port = 8080;
+const port = 1000;
 // Template & Component setup //
 
 app.set('views', 'static');

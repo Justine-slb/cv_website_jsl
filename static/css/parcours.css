@@ -1,0 +1,41 @@
+p span {
+    font-weight: 700;
+}
+
+.parcours {
+    width: 80%;
+    margin: auto;
+    padding: 2vmax;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ynov{
+    width: 20vmax;
+    color: black;
+    background-color: white;
+}
+
+.array {
+    border: #111111 solid 2px;
+    padding: 2vmax;
+    width: 50%;
+    height: fit-content;
+}
+
+
+.projets {
+    background-color: #222222;
+    color: white;
+    padding:1vmax;
+    height: fit-content;
+    margin-left: -10vmax;
+    margin-top: 5vmax;
+    width: 50%;
+}
+
+@media all and (max-width: 900px) {
+    .projets, .array{
+        width: 100%;
+        margin: auto;
+    }
+}

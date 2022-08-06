@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/carousel_project.css">
+    <link rel="stylesheet" href="css/parcours.css">
     <title>welcome!</title>
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
+            let x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
             } else {
@@ -34,77 +34,144 @@
 <body>
 {{>header}}
 <section id="intro">
-    <div id="title">
-        <div class="img_container">
-            <div class="color-box">
-                <div id="un"></div>
-                <div id="deux"></div>
-                <div id="quatre"></div>
-                <div id="trois"></div>
-                <div id="cinq"></div>
-                <div id="six"></div>
-                <div id="sept"></div>
-            </div>
-            <img class="img_cv" id="photo_cv" src="img/img.png" alt="photo CV">
-        </div>
-        <div id="title_text">
-            <h2>DEVELOPPEUR WEB<br><span>Alternance</span></h2>
-        </div>
+    <div class="title_text">
+        <h1>DEVELOPPEUR WEB<br><span>Junior</span></h1>
     </div>
 </section>
 
 <section id="presentation">
-    <div></div>
     <div id="box_presentation">
-        <h3>PRESENTATION</h3>
-        <div class="text_presentation">
-            <p style="font-weight: bolder">BONJOUR!</p>
-            <p>Je suis Justine,<br>Etudiante
-                passionnée en développement WEB, je prépare le titre de DEVELOPPEUR/CONCEPTEUR d'application avec le centre de formation O'Clock. <br>Je suis à la recherche d’une entreprise prête à m’accueillir et
-                m’accompagner durant 16 mois dans le cadre d’un contrat d'alternance à compter du 3
-                Octobre.
-                <br>Je vous laisse parcourir
-                le site et vous invite à prendre contact si vous souhaitez que l’on échange.
-                <br><br>Bonne visite !
-            </p>
-        </div>
-
+        <h3>bonjour!</h3>
+        <p style="color: black">
+            Je suis Justine,<br><br>Etudiante
+            passionnée en développement WEB, je prépare le titre de DEVELOPPEUR/CONCEPTEUR d'application avec le
+            centre de formation O'Clock. <br>Je suis à la recherche d’une entreprise prête à m’accueillir et
+            m’accompagner durant 16 mois dans le cadre d’un contrat d'alternance à compter du 3
+            Octobre.
+            <br>Je vous laisse parcourir
+            le site et vous invite à prendre contact si vous souhaitez que l’on échange.
+            <br><br>Bonne visite !
+        </p>
+    </div>
+    <div class="img_container">
+        <img class="img_cv" id="photo_cv" src="img/img.png" alt="photo CV">
     </div>
 </section>
-<section>
-    {{>carousel}}
+
+<section class="parcours">
+    <div class="array">
+        <div class="Courses">
+            <h4>experiences programmation</h4>
+            <br>
+            <div class="ynov">
+                <p><span>Ynov Campus Toulouse - 2021/2022</span></p>
+                <p>Bachelor 1 Informatique</p><br>
+            </div>
+            <div class="langages">
+                <h7>Langages de programmation</h7>
+                <p>Golang</p>
+                <p>Python</p>
+                <p>Javascript</p>
+                <p>C/C++ - initiation à la programmation orientée objet</p>
+            </div>
+            <div class="OS">
+                <h7>OS</h7>
+                <p>Linux</p>
+                <p>Windows</p>
+            </div>
+        </div>
+    </div>
+    <div class="projets">
+        <h7>Projets</h7><br><br>
+        <p><span>Jeu de pendu avec interface web</span><br>
+            Technos : Golang / SQL / HTML / CSS
+            <br><br>
+        </p>
+        <p><span>Site web Groupie tracker:</span><br>
+            Technos: API REST / Golang / HTML / CSS / Javascript
+            <br><br>
+        </p>
+        <p><span>Site internet avec Crawler </span> pour récupérer les informations de Netflix et les
+            utiliser dans une interface web<br>
+            Technos: Node.js / Express / puppeteers / javascript / MySql / HTML / CSS
+            <br><br>
+        </p>
+        <p><span>Site web Forum</span><br>
+            Technos: Golang / Sqlite/ HTML / CSS / javascript
+            <br><br>
+        </p>
+        <p><span>Site web CV</span><br>
+            Technos: Angular / Javascript / Typescript / HTML / CSS
+        </p>
+    </div>
 </section>
 
-<section id="project">
-    <div class="portfolio_title">
-        <h4>portfolio</h4>
-        <p>Ci-dessous vous trouverez une partie des projets réalisés durant l'année.</p>
+<section class="formation_section">
+    <div class="formation_detail">
+        <img class="img_alternance" src="img/pro.jpg" alt="img_illustration">
+        <div class="rythm_box">
+            <div class="formation_title">
+                <h4>recherche alternance<br></h4>
+                <p>Formation Développeur / Concepteur d'applications</p>
+                <p>Octobre 2022 / Mars 2024</p>
+                <a href="https://oclock.io/?adgroupname=Oclock&keyword=o%20clock&msclkid=0a1bf6028c3218abaf1794efa589e62b&utm_source=bing&utm_medium=cpc&utm_campaign=Brand&utm_term=o%20clock&utm_content=O%27clock">
+                    <img src="img/Logo-oclock.png" alt="logo école o'clock" class="logo_oclock"></a>
+                <p>Mon profil est éligible à la prime d'état de 8000€ 1Jeune1Solution pour aider les entreprises à
+                    embaucher des alternants</p>
+            </div>
+        </div>
     </div>
-    <div class="polygone_section">
-        <div class="polygone">
-            <a>crawler</a>
-        </div>
-        <div class="polygone">
-            <a>forum</a>
-        </div>
-        <div class="polygone">
-            <a>pendu</a>
-        </div>
-    </div>
+</section>
 
+<div class="rythm_formation">
+    <h6>Rythme alternance</h6>
+    <p class="rythm_details">la formation se déroule sur 16 mois répartis de la manière suivante:<br>
+        13 mois : 1 semaine à l'école/ 2 semaines en entreprise<br>
+        3 mois : 100% entreprise</p>
+</div>
+
+<section class="program_section">
+    <div class="program_container">
+        <div class="programme_formation">
+            <div><h6>Programme de formation</h6></div>
+            <div class="program_details">
+                <p>Client/Serveur <br>
+                    PHP & Programmation orientée objet<br>
+                    Conteneurisation (Docker)<br>
+                    PHP & Laravel<br>
+                    JavaScript & Vue.js <br>
+                    Gestion de projet (Cycle en V, méthodes agiles, Scrum)<br>
+                    Node.js & Express <br>
+                    NoSQL<br>
+                    API (REST, GraphQL, Websockets) <br>
+                    Failles de sécurité et parades (OWASP, injections) <br>
+                    Développement Mobile/Desktop (Flutter) <br>
+                    Total 721 heures de formation</p></div>
+        </div>
+        <img class="img_program" src="img/programme.jpg" alt="img_illustration">
+    </div>
 </section>
 
 <section id="techno">
     <div class="techno_container">
         <div>
             <h4 class="subtitle">Technologies</h4>
-            <p></p>
+            <p>Voici les technologies avec lesquelles j'ai travaillé durant ma première année de formation avec l'école
+                YNOV Toulouse.<br>
+                Vous pouvez retrouver certains de mes projets sur mon profil <a href="https://github.com/Justine-slb">GITHUB</a>
+            </p>
         </div>
         <div class="img_techno">
-            <div><img class="img_tech" src="img/img_1.png"><p>Node.js</p></div>
-            <div><img class="img_tech" src="img/img_2.png"><p>Angular</p></div>
-            <div><img class="img_tech" src="img/img_3.png"><p>MySql/Sqlite</p></div>
-            <div><img class="img_tech" src="img/img_4.png"><p>Javascript/Typescript</p></div>
+            <div><img class="img_tech" src="img/img_1.png" alt="nodeJs">
+                <p>NodeJs</p></div>
+            <div><img class="img_tech" src="img/img_2.png" alt="angular">
+                <p>Angular</p></div>
+            <div><img class="img_tech" src="img/img_3.png" alt="mysql">
+                <p>MySql/Sqlite</p></div>
+            <div><img class="img_tech" src="img/img_4.png" alt="js/ts">
+                <p>Javascript/Typescript</p></div>
+            <div><img class="img_tech" src="img/github.png" alt="github">
+                <p>Github</p></div>
         </div>
     </div>
 </section>

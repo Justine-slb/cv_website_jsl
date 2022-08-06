@@ -1,114 +1,54 @@
 body{
-    background: #eeeeee;
+    background: white;
     width: 100%;
     z-index: 100;
 }
 
-#intro{
-    background-color: #000000;
-    width: 100%;
-    padding: 3vmax 0;
-}
-
-#title {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: auto;
-    color: white;
-    font-family: inter, sans-serif;
-    font-weight: bolder;
-}
-
-#title_text {
-    text-justify: auto;
-    display: block;
-    margin: 8vmax 5vmax  auto 0;
-    padding: 2vmax ;
-    border: solid 1px darkgray;
-}
-
-.img_container {
-    margin: 4vmax auto -15vmax auto;
-    width: 22vmax;
-    height: 26vmax;
-    padding-top:2vmax;
-}
-
-.img_cv {
-    margin: 0;
-    width: 100%;
-    height: auto;
+/* font style */
+p {
+    font-family: "Yu Gothic Light", Arial, sans-serif;
+    font-size: 1vmax;
+    padding:0;
+    margin:0;
 }
 
 h1 {
-    font-size: 2.5vmax;
-    font-family: Yu Gothic UI Light, Helvetica, sans-serif;
-    text-align: right;
-    text-justify: auto;
+    font-size: 5vmax;
+    text-align: center;
+    margin-top: 4vmax;
 }
 
 h1 span {
+    font-size: 4vmax;
     font-family: Yu Gothic UI Light, Helvetica, sans-serif;
     font-weight: 100;
-    color: #eeeeee;
+    font-style: italic;
+    margin-right: -30vmax;
 }
 
+
 h2 {
-    font-size: 3.5vmax;
-    text-align: right;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 1.8vmax;
     margin: auto;
+    font-weight: 700;
+    text-align: right;
 }
 
 h2 span {
-    font-size: 3vmax;
-    text-align: right;
+    font-size: 2vmax;
     font-family: Yu Gothic UI Light, Helvetica, sans-serif;
     font-weight: 100;
-}
-
-#presentation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin:auto;
-    height: auto;
-    background: #eeeeee;
+    font-style: normal;
 }
 
 h3 {
     font-family: inter, sans-serif;
-    text-transform: uppercase;
-    writing-mode: vertical-lr;
-    margin : auto;
+    margin-bottom: 2vmax;
     font-weight: 700;
-    font-size: 2.6vmax;
-    letter-spacing: 0.4vmax;
-}
-
-#box_presentation {
-    display: flex;
-    margin: 6vmax 6vmax 4vmax 0;
-    font-family: "Yu Gothic Light", Arial, sans-serif;
-    text-align: justify;
-    background-color: #eeeeee;
-    padding: 0 2vmax;
-}
-
-.text_presentation {
-    padding: 0 2vmax;
-}
-
-p {
-    font-family: "Yu Gothic Light", Arial, sans-serif;
-    font-size: 1.2vmax;
-}
-
-#project{
-    padding-top:2vmax;
-    width: 90%;
-    margin: auto;
-    height: auto;
-    display: block;
-    padding-bottom: 4vmax;
+    font-size: 2.5vmax;
+    letter-spacing: 0.2vmax;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -116,50 +56,227 @@ h4 {
     color: black;
     font-family: inter, sans-serif;
     font-weight: bolder;
-    font-size: 2.5vmax;
+    font-size: 1.8vmax;
     text-transform: uppercase;
     margin: 0;
 }
 
-.polygone {
-    margin: auto;
-    padding : 6vmax;
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-    background-color: #80B5CC;
-    font-family: "Yu Gothic Light", Arial, sans-serif;
+h5 {
+    font-family: "Yu Gothic UI Light", Arial,sans-serif;
+    font-weight: 100;
+    padding:0;
+    margin:2vmax;
+}
+h5 span {
+    font-family: inter, sans-serif;
+    margin-bottom: 2vmax;
+    font-weight: 700;
+    font-size: 2.5vmax;
+    letter-spacing: 0.2vmax;
     text-transform: uppercase;
-    font-size: 2vmax;
 }
 
-.polygone:hover {
-    background: black;
-    color: #eeeeee;
-    transform: translateY(+10px);
+h6 {
+    font-size: 1.5vmax;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    padding:1vmax;
+    margin-bottom: 1vmax;;
+    margin-top:0;
+}
+
+h7 {
+    font-size: 1.2vmax;
+    text-transform: uppercase;
+    font-weight: bold;;
+
+}
+
+/*section 1*/
+#intro{
+    background-color: #111111;
+    width: 100%;
+    padding: 3vmax 0;
+}
+
+#title {
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: inter, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 2vmax;
+}
+
+.title_text {
+    color: white;
+    text-justify: auto;
+    display: block;
+    margin-top: 2vmax;
+}
+
+.title_text h2 {
+    margin-right: 4vmax;
+    margin-top: 5vmax;
+}
+
+ /*img CV + color boxes*/
+.img_container {
+    margin:auto;
+    width: 60%;
+    height: auto;
+    border: solid 2px white;
+    background-color: #111111;
+}
+
+.img_cv {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: -4vmax;
+    bottom: -4vmax;
+    padding:0;
+}
+
+.color-box {
+    position: absolute;
+    width: 26vmax;
+    height: 30vmax;
+}
+
+/*paragraphe presentation*/
+#presentation {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 4vmax;
+    padding-top: 2vmax;
+}
+
+#box_presentation {
+    position: relative;
+    margin:auto;
+    width: 30vmax;
+    display: block;
+    font-family: "Yu Gothic Light", Arial, sans-serif;
+    font-weight: 100;
+    padding: 2vmax;
+
+}
+
+/*section formation*/
+.formation_section{
+    height: 100%;
+    width: 80%;
+    background-color: #eeeeee ;
+    margin: 2vmax auto;
+}
+
+.program_section{
+    background-color: #111111;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.formation_title{
+    display: block;
+    width: 80%;
+    margin:auto;
+    color: black;
+    text-align: center;
+}
+.rythm_box{
+    display: block;
+}
+
+.logo_oclock{
+    margin:3vmax auto;
+    width: 50%;
+}
+
+.formation_detail{
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 45% 55%;
+    padding: 2vmax 0;
+}
+.program_container{
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 55% 45%;
+}
+
+.img_alternance, .img_program{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.rythm_formation {
+    background-color: black;
+    margin: 4vmax auto;
+    text-align: center;
+    color: white;
+    max-width: 50%;
+    min-width: 10vmax;
+    padding: 2vmax;
+    box-shadow: 2px 4px 6px dimgrey;
+}
+
+.programme_formation{
+    height: fit-content;
+    text-align: center;
+    margin: auto ;
+}
+
+.info_formation_box{
+    display: block;
+    margin:auto;
+}
+
+.program_details {
+    display:none;
+    visibility: hidden;
+    padding: 10px;
+    -webkit-transition: visibility 400ms;
+    transition: visibility 100ms;
+    color: white;
+}
+
+.programme_formation div h6{
+    box-shadow: 1px 2px 3px black;
+    width: auto;
+}
+
+.programme_formation:hover h6{
+    background-color: black;
+    color: white;
     transition: color 0.8s ease-out;
+
 }
 
-.polygone_section {
+.programme_formation:hover .program_details  {
+    display: block;
+    visibility: visible;
+    -webkit-transition: visibility 1s;
+    transition: visibility 1s;
+}
+
+.techno_container{
+    padding: 4vmax 2vmax;
+    width: 80%;
+    margin: auto;
+}
+
+.img_techno{
+    margin: 2vmax auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    padding-top: 2vmax;
-    width: 80%;
-}
-
-#techno {
-    margin: auto;
-    height: auto;
-    display: block;
-
-}
-.img_techno{
-    margin:auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 4vmax;
+    text-align: center;
 }
 
 .img_techno div {
@@ -169,6 +286,9 @@ h4 {
 .img_techno div .img_tech{
     width: 6vmax;
 }
+.img_tech {
+    margin-bottom: 1vmax;
+}
 
 .subtitle{
     color: #000000;
@@ -176,81 +296,6 @@ h4 {
     padding: 2vmax;
 }
 
-.techno_container{
-    padding: 4vmax 2vmax;
-    width: 90%;
-    margin: auto;
-}
-
-.color-box {
-    position: absolute;
-    width: 26vmax;
-    height: 30vmax;
-}
-
-#un {
-    width: 5vmax;
-    height: 5vmax;
-    background: #eeeeee;
-    position: absolute;
-    right: 1vmax;
-    top:-3vmax;
-}
-
-#deux {
-    position: absolute;
-    width: 6vmax;
-    height: 6vmax;
-    background: #80B5CC;
-    bottom: 1vmax;
-    right: 0vmax;
-}
-
-#trois {
-    position: absolute;
-    width: 8vmax;
-    height: 8vmax;
-    background: black;
-    bottom: -10vmax;
-    right: 10vmax;
-}
-
-#quatre {
-    position: absolute;
-    width: 4.5vmax;
-    height: 4.5vmax;
-    background: #C0F4FF;
-    bottom:-4vmax;
-    left:5vmax;
-    z-index: 2;
-}
-
-#cinq{
-    position: absolute;
-    width: 5vmax;
-    height: 5vmax;
-    background: #111111;
-    bottom: 2vmax;
-    left: -3vmax;
-}
-
-#six {
-    position: absolute;
-    width: 3vmax;
-    height: 3vmax;
-    background: #111111;
-    right: -2vmax;
-    bottom: -1vmax;
-}
-
-#sept {
-    position: absolute;
-    width: 3vmax;
-    height: 3vmax;
-    background: #2F84B5;
-    top:1vmax;
-    right: -1vmax;
-}
 
 @media all and (max-width: 900px) {
     #title {
@@ -263,7 +308,7 @@ h4 {
     }
 
     .img_container {
-        margin: 5vmax auto auto auto;
+        width: 30%;
     }
 
     h2, h1 {
@@ -273,13 +318,16 @@ h4 {
     #presentation {
         display: block;
         text-align: center;
+        height: auto;
     }
 
     #box_presentation {
-        margin: 5vmax auto;
-        width: 50%;
+        right: 0;
+        margin: auto;
+        top: -5vmax
     }
-    .color-box {
-        display: none;
+
+    .img_container {
+        width: 40%;
     }
 }
