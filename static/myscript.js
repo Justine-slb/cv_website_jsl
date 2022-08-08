@@ -23,11 +23,11 @@ function showorhide() {
     }
 }
 
-
-document.addEventListener("adobe_dc_view_sdk.ready", function () {
+document.addEventListener("adobe_dc_view_sdk.ready", function(){
     var adobeDCView = new AdobeDC.View({clientId: "8ad7b230708c488f8a6fe35a807b3c72", divId: "adobe-dc-view"});
     adobeDCView.previewFile({
-        content: {location: {url: "img/cv_justine_seguin-le_boulanger.pdf"}},
-        metaData: {fileName: "cv_justine_seguin-le_boulanger.pdf"}
+        content:{location: {url: "img/cv_justine_seguin-le_boulanger.pdf"}},
+        metaData:{fileName: "cv_justine_seguin-le_boulanger.pdf"}
     }, {embedMode: "IN_LINE"});
 });
+
