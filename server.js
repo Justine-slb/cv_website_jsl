@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 
 hbs.registerPartials(path.join(__dirname, 'static/partials'));
 
-let route = require("./backend/app");
+let route = require("backend/app");
 app.use("/",route);
 
 /*for load all other page in 404*/

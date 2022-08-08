@@ -176,7 +176,6 @@ h7 {
     width: 80%;
     background-color: #eeeeee ;
     margin:auto;
-    padding-bottom: 2vmax;
 }
 
 .program_section{
@@ -195,6 +194,7 @@ h7 {
 }
 .rythm_box{
     display: block;
+    margin:auto
 }
 
 .logo_oclock{
