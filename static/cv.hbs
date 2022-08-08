@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
     <script src="myscript.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -16,24 +17,8 @@
 <body>
 {{>header}}
 
-<div id="adobe-dc-view" style="width: 800px;"></div>
-<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-    document.addEventListener("adobe_dc_view_sdk.ready", function(){
-        var adobeDCView = new AdobeDC.View({clientId: "8ad7b230708c488f8a6fe35a807b3c72", divId: "adobe-dc-view"});
-        adobeDCView.previewFile({
-            content:{location: {url: "img/cv_justine_seguin-le_boulanger.pdf"}},
-            metaData:{fileName: "cv_justine_seguin-le_boulanger.pdf"}
-        }, {embedMode: "IN_LINE"});
-    });
-</script>
-<!--<section>
-    <div class="pdf">
-        <a href="img/cv_justine_seguin-le_boulanger.pdf">cv</a>
-        <embed src="img/cv_justine_seguin-le_boulanger.pdf#view=fitH" width="100%" height="700vmax">
-        </embed>
-    </div>
-</section>-->
+<div id="adobe-dc-view" style="width: 80%; margin:5vmax auto;"></div>
+
 {{>footer}}
 </body>
 
