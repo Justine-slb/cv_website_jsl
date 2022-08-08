@@ -34,16 +34,17 @@ h1 span {
 
 h2 {
     color: black;
-    font-family: 'lemon sundae', sans-serif;
-    font-weight: bolder;
-    font-size: 3.5vmin;
+    font-family: "Yu Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 4vmin;
     text-transform: uppercase;
     margin: 0;
+
+    padding:1vmax
 }
 
 h3 {
     font-family: inter, sans-serif;
-    padding: 1vmax;
     font-weight: 700;
     font-size: 2.5vmax;
     letter-spacing: 0.2vmax;
@@ -56,6 +57,7 @@ h4{
     text-transform: uppercase;
     background-color: white;
     margin-top:0;
+    padding:1vmax
 }
 
 button {
@@ -133,9 +135,8 @@ h7 {
 #box_presentation {
     position: relative;
     margin:auto;
-    width: 30vmax;
     display: block;
-    padding-top: 2vmax;
+    padding: 2vmax;
 }
 
 /*section formation*/
@@ -144,10 +145,6 @@ h7 {
     width: 80%;
     background-color: white ;
     margin: 2vmax auto;
-}
-
-.formation_section h4 {
-    padding:2vmax
 }
 
 .program_section{
@@ -165,7 +162,6 @@ h7 {
     text-align: center;
 }
 
-
 .logo_oclock{
     margin:1vmax auto;
     width: 50%;
@@ -177,6 +173,7 @@ h7 {
     grid-template-columns: 45% 55%;
     padding: 2vmax 0;
 }
+
 .program_container{
     background-color: #222222;
     display: grid;
@@ -276,7 +273,7 @@ h7 {
     p {
         font-family: "Yu Gothic", Arial, sans-serif;
         font-weight: normal;
-        font-size: 2.2vmin;
+        font-size: 3vmin;
         line-height: 1.6;
     }
     #title {
@@ -308,5 +305,15 @@ h7 {
 
     .img_container {
         width: 50%;
+    }
+    .logo_oclock{
+        margin:1vmax auto;
+        width: 80%;
+    }
+    .formation_detail{
+        display:block;
+    }
+    .formation_title{
+        padding-bottom: 2vmax;
     }
 }
