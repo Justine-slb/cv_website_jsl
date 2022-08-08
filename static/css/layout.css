@@ -301,7 +301,8 @@ h7 {
     p {
         font-family: "Yu Gothic", Arial, sans-serif;
         font-weight: normal;
-        font-size: 2vmin;
+        font-size: 2.8vmin;
+        line-height: 1.6;
     }
     #title {
         display: block;
@@ -331,6 +332,6 @@ h7 {
     }
 
     .img_container {
-        width: 40%;
+        width: 50%;
     }
 }
