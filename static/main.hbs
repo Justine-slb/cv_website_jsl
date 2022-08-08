@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <meta name="description" content="in line Justine Seguin-Le boulanger's cv. Junior developer in Toulouse, south of France">
+    <meta name="description"
+          content="in line Justine Seguin-Le boulanger's cv. Junior developer in Toulouse, south of France">
     <meta name="keywords" content="web developer, Toulouse, south of France, front-end developer, back-end developer"/>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -22,7 +23,6 @@
 <section id="intro">
     <div class="title_text">
         <h1>DEVELOPPEUR WEB<br></h1>
-
     </div>
 </section>
 
@@ -46,38 +46,28 @@
 </section>
 
 <section class="formation_section">
+    <h2 style="margin:2vmax; padding-top:2vmax">recherche alternance</h2>
     <div class="formation_detail">
-        <img class="img_alternance" src="img/pro.jpg" alt="img_illustration">
-        <div class="rythm_box">
-            <div class="formation_title">
-                <h4>recherche alternance<br></h4>
-                <p>Formation Développeur / Concepteur d'applications</p>
-                <p>Octobre 2022 / Mars 2024</p>
-                <a href="https://oclock.io/?adgroupname=Oclock&keyword=o%20clock&msclkid=0a1bf6028c3218abaf1794efa589e62b&utm_source=bing&utm_medium=cpc&utm_campaign=Brand&utm_term=o%20clock&utm_content=O%27clock">
-                    <img src="img/Logo-oclock.png" alt="logo école o'clock" class="logo_oclock"></a>
-                <p>Mon profil est éligible à la prime d'état de 8000€ 1Jeune1Solution pour aider les entreprises à
-                    embaucher des alternants</p>
-            </div>
+        <!--<img class="img_alternance" src="img/pro.jpg" alt="img_illustration">-->
+        <div class="formation_title">
+            <p>Formation Développeur / Concepteur d'applications</p>
+            <p>Octobre 2022 / Mars 2024</p>
+            <a href="https://oclock.io/?adgroupname=Oclock&keyword=o%20clock&msclkid=0a1bf6028c3218abaf1794efa589e62b&utm_source=bing&utm_medium=cpc&utm_campaign=Brand&utm_term=o%20clock&utm_content=O%27clock">
+                <img src="img/Logo-oclock.png" alt="logo école o'clock" class="logo_oclock"></a>
+            <p>Mon profil est éligible à la prime d'état de 8000€ 1Jeune1Solution pour aider les entreprises à
+                embaucher des alternants</p>
+        </div>
+        <div class="rythm_formation">
+            <h4>Rythme alternance</h4>
+            <p class="rythm_details">la formation se déroule sur 16 mois répartis de la manière suivante:<br>
+                13 mois : 1 semaine à l'école/ 2 semaines en entreprise<br>
+                3 mois : 100% entreprise</p>
         </div>
     </div>
-
-</section>
-<section class="alternance">
-    <div class="rythm_formation">
-        <h6>Rythme alternance</h6>
-        <p class="rythm_details">la formation se déroule sur 16 mois répartis de la manière suivante:<br>
-            13 mois : 1 semaine à l'école/ 2 semaines en entreprise<br>
-            3 mois : 100% entreprise</p>
-    </div>
-</section>
-
-
-
-<section class="program_section">
     <div class="program_container">
         <div class="programme_formation">
-            <div><h6>Programme de formation</h6></div>
-            <div class="program_details">
+            <button type="button" onclick="showorhide()">Programme de formation</button>
+            <div class="program_details" id="program_details">
                 <p>Client/Serveur <br>
                     PHP & Programmation orientée objet<br>
                     Conteneurisation (Docker)<br>
@@ -91,16 +81,19 @@
                     Développement Mobile/Desktop (Flutter) <br>
                     Total 721 heures de formation</p>
             </div>
-
         </div>
         <img class="img_program" src="img/programme.jpg" alt="img_illustration">
     </div>
 </section>
 
+<section class="program_section">
+
+</section>
+
 <section class="parcours">
     <div class="array">
         <div class="Courses">
-            <h4>experiences programmation</h4>
+            <h2>experiences programmation</h2>
             <br>
             <div class="ynov">
                 <p><span>Ynov Campus Toulouse - 2021/2022</span></p>
@@ -121,7 +114,8 @@
         </div>
     </div>
     <div class="projets">
-        <h7>Projets</h7><br><br>
+        <h7>Projets réalisés</h7>
+        <br><br>
         <p><span>Jeu de pendu avec interface web</span><br>
             Technos : Golang / SQL / HTML / CSS
             <br><br>
@@ -146,25 +140,26 @@
 </section>
 
 <section class="techno_container">
-        <div>
-            <h4 class="subtitle">Technologies</h4>
-            <p>Voici les technologies avec lesquelles j'ai travaillé durant ma première année de formation avec l'école
-                YNOV Toulouse.<br>
-                Vous pouvez retrouver certains de mes projets sur mon profil <a href="https://github.com/Justine-slb">GITHUB</a>
-            </p>
-        </div>
-        <div class="img_techno">
-            <div><img class="img_tech" src="img/img_1.png" alt="nodeJs">
-                <p>NodeJs</p></div>
-            <div><img class="img_tech" src="img/img_2.png" alt="angular">
-                <p>Angular</p></div>
-            <div><img class="img_tech" src="img/img_3.png" alt="mysql">
-                <p>MySql/Sqlite</p></div>
-            <div><img class="img_tech" src="img/img_4.png" alt="js/ts">
-                <p>Javascript/Typescript</p></div>
-            <div><img class="img_tech" src="img/github.png" alt="github">
-                <p>Github</p></div>
-        </div>
+    <h2>Technologies</h2>
+    <div>
+        <p>Voici les technologies avec lesquelles j'ai travaillé durant ma première année de formation avec l'école
+            YNOV Toulouse.<br>
+            Vous pouvez retrouver certains de mes projets sur mon profil <a
+                    href="https://github.com/Justine-slb">GITHUB</a>
+        </p>
+    </div>
+    <div class="img_techno">
+        <div><img class="img_tech" src="img/img_1.png" alt="nodeJs">
+            <p>NodeJs</p></div>
+        <div><img class="img_tech" src="img/img_2.png" alt="angular">
+            <p>Angular</p></div>
+        <div><img class="img_tech" src="img/img_3.png" alt="mysql">
+            <p>MySql/Sqlite</p></div>
+        <div><img class="img_tech" src="img/img_4.png" alt="js/ts">
+            <p>Javascript/Typescript</p></div>
+        <div><img class="img_tech" src="img/github.png" alt="github">
+            <p>Github</p></div>
+    </div>
 </section>
 {{>footer}}
 </body>

@@ -1,3 +1,5 @@
+@import url("https://www.1001fonts.com/lemon-sundae-demo-font.html");
+
 body{
     background-image: url('wallpaper.jpg');
     background-size: cover;
@@ -31,18 +33,12 @@ h1 span {
 
 
 h2 {
-    font-family: Inter, Helvetica, sans-serif;
-    font-size: 1.8vmax;
-    margin: auto;
-    font-weight: 700;
-    text-align: right;
-}
-
-h2 span {
-    font-size: 2vmax;
-    font-family: Yu Gothic UI Light, Helvetica, sans-serif;
-    font-weight: 100;
-    font-style: normal;
+    color: black;
+    font-family: 'lemon sundae', sans-serif;
+    font-weight: bolder;
+    font-size: 3.5vmin;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 h3 {
@@ -54,43 +50,25 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 {
-    width: auto;
-    color: black;
-    font-family: inter, sans-serif;
-    font-weight: bolder;
-    font-size: 1.8vmax;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-h5 {
-    font-family: "Yu Gothic UI Light", Arial,sans-serif;
-    font-weight: 100;
-    padding:0;
-    margin:2vmax;
-}
-h5 span {
-    font-family: inter, sans-serif;
-    margin-bottom: 2vmax;
-    font-weight: 700;
-    font-size: 2.5vmax;
-    letter-spacing: 0.2vmax;
-    text-transform: uppercase;
-}
-
-h6 {
-    font-size: 1.5vmax;
+h4{
+    font-size: 2vmax;
     color: black;
     text-transform: uppercase;
     background-color: white;
-    padding:1vmax;
-    margin-bottom: 1vmax;;
     margin-top:0;
 }
 
+button {
+    font-size: 2vmax;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 2vmin;
+    margin: auto 2vmax;
+}
+
 h7 {
-    font-size: 1.4vmax;
+    font-size: 2.8vmin;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -164,8 +142,12 @@ h7 {
 .formation_section{
     height: 100%;
     width: 80%;
-    background-color: #eeeeee ;
-    margin:auto;
+    background-color: white ;
+    margin: 2vmax auto;
+}
+
+.formation_section h4 {
+    padding:2vmax
 }
 
 .program_section{
@@ -182,10 +164,7 @@ h7 {
     color: black;
     text-align: center;
 }
-.rythm_box{
-    display: block;
-    margin:auto
-}
+
 
 .logo_oclock{
     margin:1vmax auto;
@@ -199,9 +178,10 @@ h7 {
     padding: 2vmax 0;
 }
 .program_container{
+    background-color: #222222;
     display: grid;
     grid-auto-flow: row dense;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
 }
 
 .img_alternance, .img_program{
@@ -217,16 +197,15 @@ h7 {
 
 .rythm_formation {
     background-color: #222222;
-    margin: 2vmax auto;
+    margin:auto;
+    height: fit-content;
     text-align: center;
     color: white;
-    max-width: 30%;
-    min-width: 25vmax;
     padding: 2vmax;
 }
 
 .programme_formation{
-    height: fit-content;
+    height:auto;
     text-align: center;
     margin: auto ;
 }
@@ -238,35 +217,36 @@ h7 {
 
 .program_details {
     display:none;
-    visibility: hidden;
     padding: 10px;
     -webkit-transition: visibility 400ms;
     transition: visibility 100ms;
     color: white;
 }
 
-.programme_formation div h6{
+.programme_formation button{
     box-shadow: 1px 2px 3px black;
     width: auto;
 }
 
-.programme_formation:hover h6{
+.programme_formation:hover button{
     background-color: black;
     color: white;
     transition: color 0.8s ease-out;
 
 }
 
-.programme_formation:hover .program_details  {
+/*.programme_formation:hover .program_details  {
     display: block;
     visibility: visible;
     -webkit-transition: visibility 1s;
     transition: visibility 1s;
 }
 
+ */
+
 .techno_container{
     background-color: white;
-    padding: 4vmax 2vmax;
+    padding:2vmax 2vmax;
     width: 80%;
     margin:auto ;
 }
@@ -290,18 +270,13 @@ h7 {
     margin-bottom: 1vmax;
 }
 
-.subtitle{
-    color: #000000;
-    font-weight: 100;
-    padding: 2vmax;
-}
 
 
 @media all and (max-width: 900px) {
     p {
         font-family: "Yu Gothic", Arial, sans-serif;
         font-weight: normal;
-        font-size: 2.8vmin;
+        font-size: 2.2vmin;
         line-height: 1.6;
     }
     #title {

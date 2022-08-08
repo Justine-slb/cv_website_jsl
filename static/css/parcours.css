@@ -1,5 +1,6 @@
 p span {
     font-weight: 700;
+    font-size: 2.5vmin
 }
 
 h7 p {
@@ -42,8 +43,5 @@ h7 p {
     .projets, .array{
         width: 100%;
         margin: auto;
-    }
-    p span {
-        font-size: 1.4vh;
     }
 }

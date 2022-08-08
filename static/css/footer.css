@@ -35,14 +35,19 @@ footer{
     border-right: solid 1px white;
 }
 
-
 h5 {
-    font-weight: 700;
-    font-size: 1.5vmax;
+    font-family: "Yu Gothic UI Light", Arial,sans-serif;
+    font-weight: 100;
+    padding:0;
+    margin:2vmax;
 }
-
-.footer_ressources {
-
+h5 span {
+    font-family: inter, sans-serif;
+    margin-bottom: 2vmax;
+    font-weight: 700;
+    font-size: 2.5vmax;
+    letter-spacing: 0.2vmax;
+    text-transform: uppercase;
 }
 
 .footer_ressources a {
