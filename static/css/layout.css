@@ -1,7 +1,11 @@
 body{
-    background: white;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    opacity: 1;
+
     width: 100%;
-    z-index: 100;
 }
 
 /* font style */
@@ -13,9 +17,9 @@ p {
 }
 
 h1 {
+    font-family: "Yu Gothic Light", Arial, sans-serif;
     font-size: 5vmax;
     text-align: center;
-    margin-top: 4vmax;
 }
 
 h1 span {
@@ -147,6 +151,7 @@ h7 {
 
 /*paragraphe presentation*/
 #presentation {
+    background-color: white;
     width: 80%;
     margin: auto;
     display: grid;
@@ -170,11 +175,12 @@ h7 {
     height: 100%;
     width: 80%;
     background-color: #eeeeee ;
-    margin: 2vmax auto;
+    margin:auto;
+    padding-bottom: 2vmax;
 }
 
 .program_section{
-    background-color: #111111;
+    background-color: #222222;
     height: 100%;
     width: 80%;
     margin: auto;
@@ -192,7 +198,7 @@ h7 {
 }
 
 .logo_oclock{
-    margin:3vmax auto;
+    margin:1vmax auto;
     width: 50%;
 }
 
@@ -214,15 +220,19 @@ h7 {
     height: auto;
 }
 
+.alternance {
+    width: 80%;
+    margin: auto;
+}
+
 .rythm_formation {
-    background-color: black;
-    margin: 4vmax auto;
+    background-color: #222222;
+    margin: 2vmax auto;
     text-align: center;
     color: white;
     max-width: 30%;
     min-width: 10vmax;
     padding: 2vmax;
-    box-shadow: 2px 4px 6px dimgrey;
 }
 
 .programme_formation{
@@ -265,9 +275,10 @@ h7 {
 }
 
 .techno_container{
+    background-color: white;
     padding: 4vmax 2vmax;
     width: 80%;
-    margin: auto;
+    margin:auto ;
 }
 
 .img_techno{

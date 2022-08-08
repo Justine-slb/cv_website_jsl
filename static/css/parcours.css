@@ -4,7 +4,7 @@ p span {
 
 .parcours {
     width: 70%;
-    margin: auto;
+    margin: 2vmax auto;
     padding: 2vmax;
     display: flex;
     flex-wrap: wrap;
@@ -16,10 +16,10 @@ p span {
 
 .array {
     background-color: #eeeeee;
-    border: #111111 solid 2px;
     padding: 2vmax;
     width: 50%;
     height: fit-content;
+    box-shadow: 2px 4px 10px black;
 }
 
 
@@ -31,6 +31,7 @@ p span {
     margin-left: -7vmax;
     margin-top: 6vmax;
     width: 50%;
+    box-shadow: 2px 4px 10px black;
 }
 
 @media all and (max-width: 900px) {
