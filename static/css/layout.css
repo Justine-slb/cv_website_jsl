@@ -67,12 +67,14 @@ button {
     background-color: white;
     padding: 2vmin;
     margin: auto 2vmax;
+    border: none;
 }
 
-h7 {
-    font-size: 2.8vmin;
+h6{
+    font-size: 3.5vmin;
     text-transform: uppercase;
     font-weight: 700;
+    margin:0;
 }
 
 /*section 1*/
@@ -108,7 +110,6 @@ h7 {
     margin:auto;
     width: 60%;
     height: auto;
-    border: solid 2px white;
     background-color: #111111;
 }
 
@@ -123,7 +124,7 @@ h7 {
 
 /*paragraphe presentation*/
 #presentation {
-    background-color: white;
+    background-color: #eeeeee;
     width: 80%;
     margin: auto;
     display: grid;
@@ -220,26 +221,12 @@ h7 {
     color: white;
 }
 
-.programme_formation button{
-    box-shadow: 1px 2px 3px black;
-    width: auto;
-}
-
 .programme_formation:hover button{
-    background-color: black;
-    color: white;
-    transition: color 0.8s ease-out;
+    background-color: #51d6b6;
+    color: beige;
+    transition: color 0.6s ease-out;
 
 }
-
-/*.programme_formation:hover .program_details  {
-    display: block;
-    visibility: visible;
-    -webkit-transition: visibility 1s;
-    transition: visibility 1s;
-}
-
- */
 
 .techno_container{
     background-color: white;
