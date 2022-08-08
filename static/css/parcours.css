@@ -2,6 +2,10 @@ p span {
     font-weight: 700;
 }
 
+h7 p {
+    margin-left: 4vmax;
+}
+
 .parcours {
     width: 70%;
     margin: 2vmax auto;
@@ -38,5 +42,8 @@ p span {
     .projets, .array{
         width: 100%;
         margin: auto;
+    }
+    p span {
+        font-size: 1.4vh;
     }
 }

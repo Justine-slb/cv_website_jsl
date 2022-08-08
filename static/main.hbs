@@ -5,25 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <meta name="description" content="in line Justine Seguin-Le boulanger's cv. Junior developer in Toulouse, south of France">
     <meta name="keywords" content="web developer, Toulouse, south of France, front-end developer, back-end developer"/>
-
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/parcours.css">
-    <title>welcome!</title>
-    <script>
-        function myFunction() {
-            let x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script src="myscript.js"></script>
+    <title>Justine Seguin-Le boulanger</title>
+
 </head>
 
 <body>
@@ -36,6 +27,9 @@
 </section>
 
 <section id="presentation">
+    <div class="img_container">
+        <img class="img_cv" id="photo_cv" src="img/img.png" alt="photo CV">
+    </div>
     <div id="box_presentation">
         <h3>bonjour!</h3>
         <p style="color: black">
@@ -48,9 +42,6 @@
             le site et vous invite à prendre contact si vous souhaitez que l’on échange.
             <br><br>Bonne visite !
         </p>
-    </div>
-    <div class="img_container">
-        <img class="img_cv" id="photo_cv" src="img/img.png" alt="photo CV">
     </div>
 </section>
 
@@ -98,7 +89,9 @@
                     API (REST, GraphQL, Websockets) <br>
                     Failles de sécurité et parades (OWASP, injections) <br>
                     Développement Mobile/Desktop (Flutter) <br>
-                    Total 721 heures de formation</p></div>
+                    Total 721 heures de formation</p>
+            </div>
+
         </div>
         <img class="img_program" src="img/programme.jpg" alt="img_illustration">
     </div>
@@ -111,19 +104,19 @@
             <br>
             <div class="ynov">
                 <p><span>Ynov Campus Toulouse - 2021/2022</span></p>
-                <p>Bachelor 1 Informatique</p><br>
+                <p>Bachelor 1 Informatique</p>
             </div>
             <div class="langages">
                 <h7>Langages de programmation</h7>
-                <p>Golang</p>
-                <p>Python</p>
-                <p>Javascript</p>
-                <p>C/C++ - initiation à la programmation orientée objet</p>
+                <p>- Golang</p>
+                <p>- Python</p>
+                <p>- Javascript</p>
+                <p>- C/C++ - initiation à la programmation orientée objet</p>
             </div>
             <div class="OS">
                 <h7>OS</h7>
-                <p>Linux</p>
-                <p>Windows</p>
+                <p>- Linux</p>
+                <p>- Windows</p>
             </div>
         </div>
     </div>

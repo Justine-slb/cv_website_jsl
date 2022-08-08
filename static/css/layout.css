@@ -4,7 +4,6 @@ body{
     background-position: center; /* Center the image */
     background-repeat: repeat; /* Do not repeat the image */
     opacity: 1;
-
     width: 100%;
 }
 
@@ -48,7 +47,7 @@ h2 span {
 
 h3 {
     font-family: inter, sans-serif;
-    margin-bottom: 2vmax;
+    padding: 1vmax;
     font-weight: 700;
     font-size: 2.5vmax;
     letter-spacing: 0.2vmax;
@@ -91,10 +90,9 @@ h6 {
 }
 
 h7 {
-    font-size: 1.2vmax;
+    font-size: 1.4vmax;
     text-transform: uppercase;
-    font-weight: bold;;
-
+    font-weight: 700;
 }
 
 /*section 1*/
@@ -143,12 +141,6 @@ h7 {
     padding:0;
 }
 
-.color-box {
-    position: absolute;
-    width: 26vmax;
-    height: 30vmax;
-}
-
 /*paragraphe presentation*/
 #presentation {
     background-color: white;
@@ -165,9 +157,7 @@ h7 {
     margin:auto;
     width: 30vmax;
     display: block;
-    font-family: "Yu Gothic Light", Arial, sans-serif;
-    font-weight: 100;
-    padding: 2vmax;
+    padding-top: 2vmax;
 }
 
 /*section formation*/
@@ -231,7 +221,7 @@ h7 {
     text-align: center;
     color: white;
     max-width: 30%;
-    min-width: 10vmax;
+    min-width: 25vmax;
     padding: 2vmax;
 }
 
@@ -308,6 +298,11 @@ h7 {
 
 
 @media all and (max-width: 900px) {
+    p {
+        font-family: "Yu Gothic", Arial, sans-serif;
+        font-weight: normal;
+        font-size: 2vmin;
+    }
     #title {
         display: block;
         text-align: center;
@@ -317,9 +312,6 @@ h7 {
         margin:auto;
     }
 
-    .img_container {
-        width: 30%;
-    }
 
     h2, h1 {
         text-align: center;
@@ -329,12 +321,13 @@ h7 {
         display: block;
         text-align: center;
         height: auto;
+        padding-top:2vmax;
     }
 
     #box_presentation {
         right: 0;
-        margin: auto;
-        top: -5vmax
+        padding-bottom:1vmax;
+        padding-top:2vmax;
     }
 
     .img_container {
